@@ -11,16 +11,17 @@
     <h1 style="text-align: center; font-size: xx-large; color: white;">EXHIBITIONS</h1>
 <div class="centered">
   <div class="card border-left-behind">
-    <div class="shadow" style="--url: url('https://i.ibb.co/PM4ghD4/full.png')"></div>
-    <div class="image background" style="--url: url('https://i.ibb.co/JpJVJxq/Background.png')"></div>
-    <div class="image cutout"></div>
+    <!--<div class="shadow" style="--url: url('https://i.ibb.co/PM4ghD4/full.png')"></div>-->
+    <!--<div class="image background" style="--url: url('https://i.ibb.co/ZdGBm4K/m-background.png')"></div>-->
+
+    <div class="image cutout"><img src="temp.jpeg" style="width: 20rem; height: 28rem;"></div>
     <div class="content">
       <h2>Hoverover this</h2>
       <p>Content.</p>
     </div>
   </div>
   <div class="card border-right-behind border-bottom-behind">
-    <div class="shadow" style="--url: url('https://i.ibb.co/DC0MbxS/m-full.png')"></div>
+   <!-- <div class="shadow" style="--url: url('https://i.ibb.co/DC0MbxS/m-full.png')"></div>-->
     <div class="image background" style="--url: url('https://i.ibb.co/ZdGBm4K/m-background.png')"></div>
     <div class="image cutout"></div>
     <div class="content">
@@ -89,7 +90,7 @@ const remap = (value, oldMax, newMax) => {
 window.addEventListener("DOMContentLoaded", (event) => {
 	const cards = document.querySelectorAll(".card");
 	cards.forEach((e) => {
-		e.addEventListener("mousemove", (event) => {
+		e.addEventListener("mouseover", (event) => {
 			const rect = e.getBoundingClientRect();
 			const centerX = (rect.left + rect.right) / 2;
 			const centerY = (rect.top + rect.bottom) / 2;
